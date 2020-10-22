@@ -100,3 +100,260 @@ html {
   display: none;
   opacity: 0;
   transition: opacity .4s;
+}
+.prop-full-width {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+a,
+a:hover {
+  transition: color .4s,background .4s,border-color .4s;
+}
+
+em {
+  font-style: italic;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 90%;
+}
+
+.container-large {
+  max-width: 2100px;
+}
+
+.col-1 {
+  float: left;
+  width: 50%;
+}
+
+.col-2 {
+  float: left;
+  width: 50%;
+}
+
+@media screen and (max-width:720px) {
+  .col-1,
+  .col-2 {
+    float: none;
+    width: 100%;
+  }
+}
+
+.v-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.more a .fa {
+  font-weight: 600;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  font-family: "p22-underground",sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 1.3em 3.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button-black {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.button-green {
+  background: #5AB48B;
+  color: #fff;
+}
+
+.button-outline-white {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: .8em 3.5em;
+}
+
+.button-outline-green {
+  border: 2px solid #1aa170;
+  color: #1aa170;
+}
+
+.filter-list-container {
+  display: block;
+  float: left;
+  margin: 0 0 0 -10px;
+  padding: 5px 10px;
+  position: relative;
+  min-width: 230px;
+  vertical-align: middle;
+  z-index: 500;
+}
+
+.filter-list-container:hover {
+  background: #D9EDE0;
+  outline: 1px solid #b2b2b2;
+}
+
+.filter-list {
+  border-bottom: 1px solid #1a1a1a;
+  display: block;
+  font-family: "p22-underground",sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.filter-list .action {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.filter-list .action span {
+  float: right;
+  font-size: 20px;
+  font-weight: 400;
+  margin: -3px 0 0 0;
+}
+
+.filter-list .list {
+  background: #D9EDE0;
+  left: 0;
+  padding: 5px 20px 10px 20px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.filter-list .collapseable {
+  display: none;
+  outline: 1px solid #b2b2b2;
+}
+
+.filter-list .collapseable-lined {
+  background: #D9EDE0;
+  display: none;
+  height: 2px;
+  left: 0px;
+  position: absolute;
+  top: 41px;
+  width: 100%;
+  z-index: 5;
+}
+
+.filter-list-container:hover .collapseable-lined,
+.filter-list-container:hover .collapseable,
+.filter-list:hover .collapseable {
+  display: block;
+}
+
+.filter-list .list .scroller {
+  overflow-y: scroll;
+  max-height: 250px;
+}
+
+.filter-list .list .scroller::-webkit-scrollbar {
+  width: 4px;
+}
+
+.filter-list .list .scroller::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 4px;
+}
+
+.filter-list .list .link {
+  margin: 8px 0;
+}
+
+.filter-list .list .link a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+@media screen and (max-width:720px) {
+  .filter-list-container {
+    float: none;
+    width: 108%;
+  }
+
+  .filter-list {
+    border-color: #c8c8c8;
+  }
+}
+
+.template-article-excerpt .cover {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.template-article-excerpt .content {
+  background: #fff;
+  padding: 20px 20px 34px 20px;
+  position: relative;
+}
+
+.template-article-excerpt .content:before {
+  content: " ";
+  left: 20px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+  position: absolute;
+  top: -7px;
+}
+
+.template-article-excerpt:hover .content {
+  background: #D9EDE0;
+}
+
+.template-article-excerpt:hover .content:before {
+  border-bottom: 7px solid #D9EDE0;
+}
+
+.template-article-excerpt .print-link {
+  background: #3a9d5d;
+  color: #fff;
+  font-family: "p22-underground",sans-serif;
+  font-size: 11px;
+  height: 21px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transition: all .4s;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 90px;
+}
+
+.template-article-excerpt .print-link span {
+  left: 0;
+  position: absolute;
+  margin: -5px 0 0 0;
+  top: 50%;
+  transition: left .25s, opacity .35s;
+  width: 100%;
+}
+
+.template-article-excerpt .print-link .text-2 {
+  opacity: 0;
+  left: -100%;
+}
+
