@@ -3,8 +3,11 @@
     let ModelClose = document.querySelector('#close')
     let jsMenu = document.querySelector('.js-menu')
     let primary_navigation = document.querySelector('#primary-navigation')
+    let primarySearch = document.querySelector('.primary-search')
+    let jsSearch = document.querySelector('#js-icon')
     let state = false
     let stateCart = false
+    let stateSearch = false
 
     cart.addEventListener('click', () => {
         if (!stateCart){
@@ -16,12 +19,26 @@
         }
     })
     
-        jsMenu.addEventListener('click', () => {
-            if (!state) {
+    jsMenu.addEventListener('click', () => {
+        if (!state) {
                 primary_navigation.classList.add('active')
                 state = true
-            } else {
+        } else {
                 primary_navigation.classList.remove('active')
                 state = false
-            }
-        })
+        }
+    })
+
+    jsSearch.addEventListener('click', () => {
+        console.log('js-search')
+        if (!state) {
+            primarySearch.classList.add('active')
+            state = true
+    } else {
+            primarySearch.classList.remove('active')
+            state = false
+    }
+
+    })
+
+    
