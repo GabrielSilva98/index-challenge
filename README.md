@@ -1,2 +1,2 @@
 # index-challenge
-<a href=“http://challenge-index.surge.sh/“>Live demo</a>
+[Live demo](http://challenge-index.surge.sh/)
