@@ -8,7 +8,21 @@ body,
 html {
   height: 100%;
 }
+.main-header .actions .cart > a {
+            color: #1a1a1a;
+            text-decoration: none;
+            padding-left: 10px;
+        }
 
+.main-header .actions .x .line {
+            background: #1a1a1a;
+            display: block;
+            height: 3px;
+            margin: 4px 0;
+            position: relative;
+            transition: all .5s;
+            width: 100%;
+        }
 @media screen and (max-width:1025px) {
   body {
     padding: 50px 0 0 0;
