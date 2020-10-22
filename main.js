@@ -1,14 +1,27 @@
     let cart = document.querySelector('.cart')
     let miniCartModel = document.querySelector('.component-mini-cart')
     let ModelClose = document.querySelector('#close')
+    let jsMenu = document.querySelector('.js-menu')
+    let primary_navigation = document.querySelector('#primary-navigation')
+    let state = false
+    let stateCart = false
 
     cart.addEventListener('click', () => {
-        console.log(miniCartModel)
-        miniCartModel.style.display = 'block'
+        if (!stateCart){
+            miniCartModel.style.display = 'block'
+            stateCart = true
+        } else {
+            miniCartModel.style.display = 'none'
+            stateCart = false
+        }
     })
-
-    ModelClose.addEventListener('click', () => {
-        console.log(ModelClose)
-        miniCartModel.style.display = 'none'
-        })
     
+        jsMenu.addEventListener('click', () => {
+            if (!state) {
+                primary_navigation.classList.add('active')
+                state = true
+            } else {
+                primary_navigation.classList.remove('active')
+                state = false
+            }
+        })
